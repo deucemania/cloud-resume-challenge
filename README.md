@@ -1,2 +1,2 @@
-# cloud-resume-challenge
+# Cloud Resume Challenge
 Azure Cloud Resume Challenge
