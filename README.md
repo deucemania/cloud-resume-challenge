@@ -1,6 +1,12 @@
-# Cloud Resume Challenge
-Azure Cloud Resume Challenge
+# Azure Cloud Resume 
+Azure Cloud Resume challenge repository 
 
 
-Infra Diagram 
-![image](https://github.com/deucemania/cloud-resume-challenge/assets/47064623/7b2414b4-2ee4-4b1e-8c7a-29cee63c3431)
+# Infrastructure
+
+![image](https://github.com/deucemania/cloud-resume-challenge/assets/47064623/2c5d7d35-c1de-48ee-b880-5d1393084304)
+
+IaS (Infrastructure as Code) is used to manage the AZCR (Azure Cloud Resume)
+
+Terraform is used to create Azure Infrastructure. 
+
