@@ -3,4 +3,5 @@ Azure Cloud Resume Challenge
 
 
 Infra Diagram 
-![image](https://github.com/deucemania/cloud-resume-challenge/assets/47064623/7b2414b4-2ee4-4b1e-8c7a-29cee63c3431)
+![image](https://github.com/deucemania/cloud-resume-challenge/assets/47064623/2c5d7d35-c1de-48ee-b880-5d1393084304)
+
