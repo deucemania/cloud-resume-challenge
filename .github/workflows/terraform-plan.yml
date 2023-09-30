@@ -13,7 +13,7 @@ permissions:
   contents: read
 
 env:
-  working-directory: ./terraform
+  working-directory: terraform
   
 jobs:
   terraform:
