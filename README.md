@@ -1,5 +1,5 @@
 # Azure Cloud Resume 
-Azure Cloud Resume challenge repository 
+Azure Cloud Resume Challenge Repository 
 
 
 # Infrastructure
