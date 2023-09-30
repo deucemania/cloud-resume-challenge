@@ -1,3 +1,5 @@
+
+# General
 variable "product" {
   type        = string
   description = "Product name"
@@ -13,6 +15,7 @@ variable "rg_name" {
   description = "Resouce Group name"
 }
 
+# Storage Account 
 variable "stg_name" {
   type        = string
   description = "Storage Account name"
@@ -42,3 +45,8 @@ variable "stg_static_doc" {
   type        = string
   description = "Target static file name"
 }
+
+# Function App
+
+
+# Cosmos
