@@ -2,6 +2,8 @@ name: 'Terraform Branch Plan'
 
 on:
   push:
+    paths:
+      - 'terraform/**'
     branches:    
       - '*'         # matches every branch that doesn't contain a '/'
       - '*/*'       # matches every branch containing a single '/'
@@ -16,7 +18,7 @@ jobs:
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
-    environment: production
+    environment: non-prod branch plan
     env:
       ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
