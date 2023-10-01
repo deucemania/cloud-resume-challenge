@@ -43,7 +43,7 @@ jobs:
             -u ${{ secrets.ARM_CLIENT_ID }} \
             -p ${{ secrets.ARM_CLIENT_SECRET }} \
             --tenant ${{ secrets.ARM_TENANT_ID }} \
-            terraform init
+          terraform init
       working-directory: terraform
 
     # Checks that all Terraform configuration files adhere to a canonical format
