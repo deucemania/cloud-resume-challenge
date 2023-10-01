@@ -1,8 +1,8 @@
 
 # General 
-rg_name               = "rg-cacl-app-resume"
-location              = "canadacentral"
-product               = "Cloud Resume"
+rg_name  = "rg-cacl-app-resume"
+location = "canadacentral"
+product  = "Cloud Resume"
 
 # Storage Account
 stg_name              = "stgdeucecaclappresume"
