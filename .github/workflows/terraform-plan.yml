@@ -33,16 +33,21 @@ jobs:
       uses: hashicorp/setup-terraform@v1
       with:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
-    
-    # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
-    - name: Terraform Init
+
+     # Initialize AZ Env
+    - name: AZ Init
       working-directory: terraform
       run: |
           az login --service-principal \
             -u ${{ secrets.ARM_CLIENT_ID }} \
             -p ${{ secrets.ARM_CLIENT_SECRET }} \
-            --tenant ${{ secrets.ARM_TENANT_ID }} \
-          terraform init
+            --tenant ${{ secrets.ARM_TENANT_ID }}
+
+    
+    # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
+    - name: Terraform Init
+      working-directory: terraform
+      run: terraform init
 
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
