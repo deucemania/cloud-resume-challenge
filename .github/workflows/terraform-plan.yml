@@ -8,7 +8,7 @@ on:
       - '*'         # matches every branch that doesn't contain a '/'
       - '*/*'       # matches every branch containing a single '/'
       - '**'        # matches every branch
-      - '!master'   # excludes master
+      - '!main'     # excludes master
   pull_request:
 
 permissions:
@@ -40,18 +40,6 @@ jobs:
       uses: hashicorp/setup-terraform@v1
       with:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
-
-    #  # Initialize AZ Env
-    # - name: AZ Init
-    #   working-directory: terraform
-    #   run: |
-    #       az login --service-principal \
-    #         -u ${{ secrets.ARM_CLIENT_ID }} \
-    #         -p ${{ secrets.ARM_CLIENT_SECRET }} \
-    #         --tenant ${{ secrets.ARM_TENANT_ID }} 
-    #         az account set --subscription=${{ secrets.ARM_SUBSCRIPTION_ID}}
-
-
     
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
