@@ -8,9 +8,9 @@ resource "azurerm_storage_account" "static_storage" {
   account_replication_type  = var.stg_replication
   enable_https_traffic_only = var.stg_enable_https_only
 
-  static_website {
-    index_document = var.stg_static_doc
-  }
+#  static_website {
+#    index_document = var.stg_static_doc
+#  }
 
   tags = {
     product = var.product
