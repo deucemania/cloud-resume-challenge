@@ -14,5 +14,4 @@ stg_static_doc        = "index.html"
 
 # Function App
 
-
 # Cosmos
