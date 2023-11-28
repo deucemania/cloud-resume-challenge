@@ -8,12 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     environment: prod site upload 
-    env:
-      ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
-      ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
-      ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
-      ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
-      STG_KEY: ${{ secrets.STG_KEY }}
     
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
@@ -30,7 +24,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name stgdeucecaclappresume --account-key STG_KEY --auth-mode key -d '$web' -s src
+            az storage blob upload-batch --account-name stgdeucecaclappresume --account-key ${{ secrets.STG_KEY }} --auth-mode key -d '$web' -s src
 
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
