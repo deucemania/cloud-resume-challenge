@@ -26,7 +26,7 @@ resource "azurerm_cdn_profile" "cdn_profile_static_storage" {
 
 resource "azurerm_cdn_endpoint" "cdn_endpoint_static_storage" {
   name                = "deucemania"
-  profile_name        = azurerm_cdn_profile.example.name
+  profile_name        = azurerm_cdn_profile.cdn_profile_static_storage.name
   location            = var.location
   resource_group_name = var.rg_name
 
