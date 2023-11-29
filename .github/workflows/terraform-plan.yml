@@ -7,7 +7,6 @@ on:
     branches:    
       - '**'        # matches every branch
       - '!main'     # excludes master
-  pull_request:
 
 permissions:
   contents: read
