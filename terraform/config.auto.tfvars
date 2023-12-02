@@ -9,9 +9,5 @@ stg_name              = "stgdeucecaclappresume"
 stg_kind              = "StorageV2"
 stg_tier              = "Standard"
 stg_replication       = "GRS"
-stg_enable_https_only = true
+stg_enable_https_only = false
 stg_static_doc        = "index.html"
-
-# Function App
-
-# Cosmos
