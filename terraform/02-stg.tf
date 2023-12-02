@@ -34,4 +34,11 @@ resource "azurerm_cdn_endpoint" "cdn_endpoint_static_storage" {
     name      = "deucemania"
     host_name = "stgdeucecaclappresume.z9.web.core.windows.net"
   }
+  origin_host_header = "stgdeucecaclappresume.z9.web.core.windows.net"
+}
+
+resource "azurerm_cdn_endpoint_custom_domain" "cdn_endpoint_custom_domain" {
+  name            = "resume-deucemania-com"
+  cdn_endpoint_id = azurerm_cdn_endpoint.cdn_endpoint_static_storage.id
+  host_name       = "resume.deucemania.com"
 }
