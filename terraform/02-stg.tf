@@ -33,8 +33,8 @@ resource "azurerm_cdn_endpoint" "cdn_endpoint_static_storage" {
   origin {
     name               = "deucemania"
     host_name          = "stgdeucecaclappresume.z9.web.core.windows.net"
-    origin_host_header = "stgdeucecaclappresume.z9.web.core.windows.net"
   }
+  origin_host_header = "stgdeucecaclappresume.z9.web.core.windows.net"
 }
 
 resource "azurerm_cdn_endpoint_custom_domain" "cdn_endpoint_custom_domain" {
