@@ -30,7 +30,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "cdn-deucemania-resume" --name "deucemaia" --resource-group rg-cacl-app-resume 
+           az cdn endpoint purge --content-paths  "/*" --profile-name "cdn-deucemania-resume" --name "deucemania" --resource-group rg-cacl-app-resume 
 
   # Azure logout
     - name: logout
