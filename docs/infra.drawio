@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-03T19:27:12.940Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="6xIBdeX4EGUdRdfxA5cr" version="22.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-03T19:28:17.629Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="EW_8oFdkYieiqhndQ8GQ" version="22.0.0" type="github">
   <diagram name="Page-1" id="tMzUqEJ9yeKTwZ_Dhfz-">
     <mxGraphModel dx="1356" dy="830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -25,8 +25,8 @@
         <mxCell id="puDqT9H-TPPj9vobm7jd-1" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Content_Delivery_Network.svg;" vertex="1" parent="1">
           <mxGeometry x="330.65" y="345" width="108.69" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="puDqT9H-TPPj9vobm7jd-3" value="User" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="375" y="400" width="50" height="30" as="geometry" />
+        <mxCell id="puDqT9H-TPPj9vobm7jd-3" value="CDN Endpoint" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="339.34" y="400" width="100" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
